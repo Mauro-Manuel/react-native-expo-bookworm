@@ -45,6 +45,7 @@ router.post('/register', async (req, res) => {
     // get random avatar image
     const profileImage = `https://api.dicebear.com/9.x/avataaars/png?seed=${username}`;
 
+
     const user = new User({
       email,
       username,
